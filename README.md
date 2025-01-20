@@ -1,9 +1,7 @@
 # Optimizing Conference Paper Assignment Using Genetic Algorithms
 
 ## Objective
-The goal of this project was to develop a system for optimizing the assignment of conference papers to reviewers using genetic algorithms. 
-The system was designed to maximize overall satisfaction by aligning reviewer preferences while satisfying several constraints. 
-This task plays a crucial role in automating the conference paper-review process, ensuring fairness and efficiency.
+The goal of this project was to develop a system for optimizing the assignment of conference papers to reviewers using genetic algorithms. The system was designed to maximize overall satisfaction by aligning reviewer preferences while satisfying several constraints. This task plays a crucial role in automating the conference paper-review process, ensuring fairness and efficiency.
 
 ## Problem Description
 The project tackled the following constraints:
@@ -14,15 +12,10 @@ The project tackled the following constraints:
 
 ## Approach
 ### Representation
-I created a structured representation for the **preference matrix**, **friendship matrix**, and **authorship constraints**, which were modeled to capture 
-relationships between reviewers and papers effectively. Assignments were represented as matrices, where each cell indicated whether a reviewer was assigned to a 
-specific paper. A fitness function was implemented to evaluate assignments based on preference scores while minimizing constraint violations.
+I created structured representations for the **preference matrix**, **friendship matrix**, and **authorship constraints** to capture the relationships between reviewers and papers effectively. Assignments were represented as matrices, where each cell indicated whether a reviewer was assigned to a specific paper. A fitness function was implemented to evaluate assignments based on preference scores while minimizing constraint violations.
 
 ### Genetic Algorithm
-I adapted and implemented a genetic algorithm to generate optimized assignments:
-- Customized **crossover and mutation** functions ensured that offspring assignments adhered to constraints.
-- The algorithm penalized violations such as exceeding reviewer capacities or assigning friends to the same paper.
-- Libraries such as PyGAD were utilized and extended to suit the problem's requirements.
+I implemented the genetic algorithm from scratch, designing customized crossover and mutation functions to ensure that assignments adhered to all constraints. The algorithm penalized violations such as exceeding reviewer capacities, assigning friends to the same paper, or violating authorship restrictions. This custom approach allowed for greater flexibility and control over the solution's design.
 
 ### Diversity and Complexity
 To explore a broader solution space, I incorporated diversity-enhancing strategies within the algorithm. This ensured that the solution set included various feasible assignments, reducing the likelihood of stagnation in local optima.
@@ -57,4 +50,4 @@ Indicates if a reviewer is the author of a paper (1 = author, 0 = not author).
 ## Tools and Skills
 - **Languages**: Python
 - **Techniques**: Genetic algorithms, optimization
-- **Libraries**: Numpy, PyGAD (optional)
+- **Implementation**: Fully implemented without external genetic algorithm libraries.
