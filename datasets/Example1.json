@@ -1,0 +1,29 @@
+{
+  "dataset_id": "Example 1",  
+  "num_reviewers": 5,
+  "num_papers": 5,
+  "reviewer_capacity": 3,
+  "min_reviews_per_paper": 3,
+  "max_reviews_per_paper": 5,
+  "preferences": [
+    [5, 4, 5, 3, 4],
+    [4, 5, 4, 5, 3],
+    [3, 4, 5, 4, 5],
+    [5, 3, 4, 5, 4],
+    [4, 5, 3, 4, 5]
+  ],
+  "friendships": [
+    [0, 1, 0, 0, 0],
+    [1, 0, 1, 0, 0],
+    [0, 1, 0, 1, 0],
+    [0, 0, 1, 0, 1],
+    [0, 0, 0, 1, 0]
+  ],
+  "authorship": [
+    [1, 0, 0, 0, 0],
+    [0, 1, 0, 0, 0],
+    [0, 0, 1, 0, 0],
+    [0, 0, 0, 1, 0],
+    [0, 0, 0, 0, 1]
+  ]
+}
